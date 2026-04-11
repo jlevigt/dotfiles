@@ -1,0 +1,4 @@
+# Global configuration for all hosts
+Host *
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa

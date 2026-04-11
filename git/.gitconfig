@@ -1,0 +1,12 @@
+[user]
+    name = jlevigt
+    email = jlevi.gt@gmail.com
+
+[init]
+    defaultBranch = main
+
+[core]
+    editor = nvim
+
+[pull]
+    rebase = false

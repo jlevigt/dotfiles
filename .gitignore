@@ -1,0 +1,14 @@
+# Ignore local/machine-specific files
+.env
+.DS_Store
+*.log
+tmp/
+node_modules/
+.venv/
+.direnv/
+.tool-versions
+known_hosts
+authorized_keys
+id_rsa*
+id_ed25519*
+!*.example

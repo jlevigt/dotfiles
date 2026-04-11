@@ -1,0 +1,6 @@
+[tools]
+node = "20"
+bun = "latest"
+python = "3.12"
+java = "temurin-21"
+go = "latest"
