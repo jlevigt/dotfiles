@@ -1,6 +1,7 @@
 [tools]
-node = "20"
+node = "lts"
 bun = "latest"
-python = "3.12"
-java = "temurin-21"
+python = "latest"
+java = "lts"
 go = "latest"
+pnpm = "latest"
