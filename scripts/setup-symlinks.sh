@@ -11,3 +11,12 @@ ln -sf "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 
 mkdir -p "$HOME/.ssh"
 ln -sf "$DOTFILES_DIR/ssh/config" "$HOME/.ssh/config"
+
+# Create local bin symlinks for Debian-specific tool names
+mkdir -p "$HOME/.local/bin"
+if command -v batcat >/dev/null 2>&1 && ! command -v bat >/dev/null 2>&1; then
+  ln -sf "$(command -v batcat)" "$HOME/.local/bin/bat"
+fi
+if command -v fdfind >/dev/null 2>&1 && ! command -v fd >/dev/null 2>&1; then
+  ln -sf "$(command -v fdfind)" "$HOME/.local/bin/fd"
+fi

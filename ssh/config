@@ -2,3 +2,11 @@
 Host *
     AddKeysToAgent yes
     IdentityFile ~/.ssh/id_rsa
+
+# Hostinger VPS
+Host vps
+    HostName 72.61.128.249
+    User root
+    IdentityFile ~/.ssh/id_ed25519_vps
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
